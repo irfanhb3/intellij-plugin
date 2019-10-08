@@ -1,12 +1,9 @@
 <idea-plugin>
     <id>plugin.plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>My First Plug</name>
+    <vendor email="irfanhb3@gmail.com">Irfan</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <description>Just trying out some plugin creation stuff></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -18,15 +15,23 @@
         <!-- Add your extensions here -->
     </extensions>
 
+    <application-components>
+        <component>
+            <implementation-class>
+                components.MyComponent
+            </implementation-class>
+        </component>
+    </application-components>
+
     <actions>
         <group id="plugin.TopMenu"
-               text="_plugin"
+               text="_Plugin"
                description="MyPlugin Toolbar Menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="MyAction"
-                    class="MyAction"
+            <action id="actions.MyAction"
+                    class="actions.MyAction"
                     text="_MyAction"
-                    description="MyAction"/>
+                    description="actions.MyAction"/>
         </group>
     </actions>
 </idea-plugin>

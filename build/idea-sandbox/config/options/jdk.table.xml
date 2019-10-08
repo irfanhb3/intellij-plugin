@@ -156,6 +156,7 @@
     <jdk version="2">
       <name value="Android API 28 Platform" />
       <type value="Android SDK" />
+      <version value="java version &quot;1.8.0_152&quot;" />
       <homePath value="$USER_HOME$/Library/Android/sdk" />
       <roots>
         <annotationsPath>

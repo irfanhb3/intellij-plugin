@@ -1,3 +1,5 @@
+package actions;
+
 import com.intellij.notification.NotificationDisplayType;
 import com.intellij.notification.NotificationGroup;
 import com.intellij.notification.NotificationType;
@@ -6,7 +8,6 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import org.jetbrains.annotations.NotNull;
 
 public class MyAction extends AnAction{
-
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {

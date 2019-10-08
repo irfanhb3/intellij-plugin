@@ -1,4 +1,4 @@
-alues-mcc311-mnc180-en-rxc
+xc
 stringsvalues-mcc311-mnc180-es-rus
 stringsvalues-mcc311-mnc180-fr-rca
 stringsvalues-mcc311-mnc180-pt-rbr
@@ -56,4 +56,4 @@ alues-mcc311-mnc180-en-rxc
 strings!values-mcc311-mnc180-b+sr+latn
 strings!values-mcc312-mnc670-b+sr+latn
 strings!values-mcc313-mnc100-b+sr+latn
-strings
+stringsbuild_file_checksums
