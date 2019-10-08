@@ -1,21 +1,0 @@
-oStartAnimationüLOG_TAGà	mListenerümCustomSlingshotDistanceğmScaleDownAnimationömIsBeingDraggedØ	DRAG_RATEêí#şÏ		TAnimatorUpdateListenerİ
-AnimatableAnimatorListenerõ
-AnnotationïDrawableSNonNullúÿÿÿuæÚŞúÄ		Retentionì
-RestrictToí\ŒÕ'"ùÿœ(ãøê[ProgressDrawableSizeêRingCircularProgressDrawableZ	CapşÿÿÿCÔCanvasıÿÿÿYbÆ	RectYValueAnimatoråRectFbAnimatorüÿÿÿıÄËÒColorFilterşÿÿÿ¥Ù	ContextàRingûÿÿÿöŞË
-Ô
-İ
-XintşÿÿÿğúWLARGEğDEFAULTúVBgetShowArrowÊdrawşÿÿÿYÆ	onAnimationRepeatÒonAnimationEndÄgetAlphaşÿÿÿ³Ô	
-setEndTrimßstopû	onAnimationStartısetColor|getCenterRadiusşÿÿÿşÈgetStrokeCapşÿÿÿJÜapplyTransformationİ
-onAnimationCancelËevaluateColorChangeÀ
-setStrokeCapşÿÿÿCÔsetRotationşÿÿÿëà	getNextColor–setStartTrimÄsetProgressRotationågetNextColorIndex›storeOriginalsà	getColorswgetStartingEndTrimÕgetArrowHeightşÿÿÿTçresetOriginalsåsetArrowDimensionsşÿÿÿ:ìsetCenterRadiusşÿÿÿ÷ÍgetStartingStartTrimĞsetColorIndexgetArrowEnabledõ	setColorsosetArrowScaleşÿÿÿÏÆsetColorFilterşÿÿÿ¥Ù	getProgressRotationàgetStartTrimşÿÿÿËÍgetColorSchemeColorsøsetStyleõsetBackgroundColorşÿÿÿƒñapplyFinishTranslationÔ
-getStartingRotationÛ	isRunningñ	updateRingColorË
-getArrowScaleşÿÿÿÖÁ2ö1ŞgetRotationşÿÿÿòç	Ring5CircularProgressDrawableàsetShowArrowÃ
-getEndTrimşÿÿÿæÒgetArrowWidthşÿÿÿOâgetBackgroundColorşÿÿÿŠìsetAlphaşÿÿÿ¬Í	getStartingColorÚsetStartEndTrim×startö	setStrokeWidthşÿÿÿ¸ÁsetColorSchemeColorsşonAnimationUpdateågetStrokeWidthşÿÿÿ¿üsetArrowEnabledú
-getOpacityì	setupAnimatorsè
-goToNextColor drawTrianglebsetSizeParametersèU.COLORSÄDEFAULTúmRingCenterRadius+mTempBoundsMIN_PROGRESS_ARCÔmCurrentColor3mArrow'STROKE_WIDTHş
-mResourcesØmRingÎCENTER_RADIUS_LARGEòARROW_HEIGHT_LARGEøCENTER_RADIUSü	mRotationşÿÿÿĞRING_ROTATIONÖ
-mStartTrimmAlpha1mColorIndexLINEAR_INTERPOLATORìmStartingStartTrimSTROKE_WIDTH_LARGEôARROW_WIDTHÀCOLOR_CHANGE_OFFSETÆmArrowScale)LARGEğmStrokeWidthANIMATION_DURATIONÊmCirclePaintmStartingEndTrim!mRotationCountÜMATERIAL_INTERPOLATORîmStartingRotation#mArrowWidth-GROUP_FULL_ROTATIONÌARROW_HEIGHTÂMAX_PROGRESS_ARCÒ
-mShowArrow%mArrowHeight/mColorsARROW_WIDTH_LARGEömArrowPaintmPaint
-mFinishingŞ	mAnimatorÚSHRINK_OFFSETÈmEndTrimËéHUAPPLICATION_ID	VERSION_CODEFLAVORDEBUGVERSION_NAME
-BUILD_TYPEXStringüÿÿÿ	intbooleanWAPPLICATION_ID	VERSION_CODEFLAVORDEBUGVERSION_NAME
-BUILD_TYPE\K	7µ[BuildConfig

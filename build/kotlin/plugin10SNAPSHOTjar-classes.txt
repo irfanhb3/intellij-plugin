@@ -1,1 +1,0 @@
-/Users/irfanhussainbhati/IdeaProjects/plugin/build/classes/java/main/MyAction.class:/Users/irfanhussainbhati/IdeaProjects/plugin/build/classes/java/main/actions/MyAction.class:/Users/irfanhussainbhati/IdeaProjects/plugin/build/classes/kotlin/main/MyAction.class:/Users/irfanhussainbhati/IdeaProjects/plugin/build/classes/kotlin/main/components/MyComponent.class
