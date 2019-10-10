@@ -1,0 +1,32 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <id>plugin.plugin</id>
+  <name>My First Plug</name>
+  <vendor email="irfanhb3@gmail.com">Irfan</vendor>
+  <description>Just trying out some plugin creation stuff&gt;</description>
+  <extensions defaultExtensionNs="com.intellij">
+    <defaultProjectTypeProvider type="Android"/>
+    <projectConfigurable instance="settings.JiraSettings"/>
+  </extensions>
+  <application-components>
+    <component>
+      <implementation-class>
+                components.MyComponent
+            </implementation-class>
+    </component>
+    <component>
+      <implementation-class>
+                components.JiraComponent
+            </implementation-class>
+    </component>
+  </application-components>
+  <actions>
+    <group id="plugin.TopMenu" text="_Plugin" description="MyPlugin Toolbar Menu">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="actions.MyAction" class="actions.MyAction" text="_MyAction" description="actions.MyAction"/>
+    </group>
+  </actions>
+</idea-plugin>

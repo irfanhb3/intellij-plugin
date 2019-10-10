@@ -40,7 +40,6 @@ class MyComponent : ApplicationComponent, PersistentStateComponent<MyComponent> 
 
         if (s1.size != s2.size)
             return true
-        System.out.println("info "+s1[0]+" "+s2[0])
         var i = 0
         while (i < s1.size && i < s2.size) {
             if (s1[i] < s1[i])

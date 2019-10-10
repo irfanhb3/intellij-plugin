@@ -12,13 +12,21 @@
     -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <defaultProjectTypeProvider type="Android"/>
+        <projectConfigurable
+                instance="settings.JiraSettings">
+        </projectConfigurable>
     </extensions>
 
     <application-components>
         <component>
             <implementation-class>
                 components.MyComponent
+            </implementation-class>
+        </component>
+        <component>
+            <implementation-class>
+                components.JiraComponent
             </implementation-class>
         </component>
     </application-components>
