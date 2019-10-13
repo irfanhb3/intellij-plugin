@@ -91,3 +91,11 @@ java.method.parameter.types
 java.class.shortname
 java.class.fqn
 java.module.name
+XsltSymbolIndex
+ant-imports
+FormClassIndex
+IdeaPluginRegistrationIndex
+JavaFxControllerClassIndex
+javafx.id.name
+javafx.custom.component
+markdown.header

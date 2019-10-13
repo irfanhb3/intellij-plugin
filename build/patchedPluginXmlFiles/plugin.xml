@@ -7,6 +7,7 @@
   <name>My First Plug</name>
   <vendor email="irfanhb3@gmail.com">Irfan</vendor>
   <description>Just trying out some plugin creation stuff&gt;</description>
+  <depends>Git4Idea</depends>
   <extensions defaultExtensionNs="com.intellij">
     <defaultProjectTypeProvider type="Android"/>
     <projectConfigurable instance="settings.JiraSettings"/>
@@ -27,6 +28,14 @@
     <group id="plugin.TopMenu" text="_Plugin" description="MyPlugin Toolbar Menu">
       <add-to-group group-id="MainMenu" anchor="last"/>
       <action id="actions.MyAction" class="actions.MyAction" text="_MyAction" description="actions.MyAction"/>
+    </group>
+    <group id="MediumMenu" text="_Medium" description="Medium" popup="true">
+      <group id="MediumInsideMenu" text="_Medium" description="Medium">
+        <action id="JiraMoveIssue" class="actions.jiraAction.JiraMoveAction" text="Move Issue" description="Move Issue in Jira">
+          <keyboard-shortcut first-keystroke="control alt k" keymap="$default"/>
+        </action>
+      </group>
+      <add-to-group group-id="ProjectViewPopupMenu" relative-to-action="RefactoringMenu" anchor="before"/>
     </group>
   </actions>
 </idea-plugin>

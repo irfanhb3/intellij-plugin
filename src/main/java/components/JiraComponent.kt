@@ -13,7 +13,9 @@ class JiraComponent(project: Project? = null) : AbstractProjectComponent(project
     Serializable, PersistentStateComponent<JiraComponent> {
 
     var name = ""
-    var password = ""
+    var token = ""
+    var url = ""
+    var regex = ""
 
     override fun getState(): JiraComponent? = this
 

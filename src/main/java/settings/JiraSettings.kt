@@ -15,13 +15,17 @@ class JiraSettings(private val project: Project): Configurable, DocumentListener
 
     override fun getDisplayName(): String = "My Jira Plugin"
 
-    private val passwordField = JPasswordField()
+    private val tokenField = JPasswordField()
     private val txtUsername = JTextField()
+    private val txtUrl = JTextField()
+    private val txtRegEx = JTextField()
 
     override fun apply() {
         val config = JiraComponent.getInstance(project)
-        config.name = txtUsername.name
-        config.password = String(passwordField.password)
+        config.name = txtUsername.text
+        config.token = String(tokenField.password)
+        config.url = tokenField.text
+        config.regex = tokenField.text
         isModified = false
     }
 
@@ -38,31 +42,51 @@ class JiraSettings(private val project: Project): Configurable, DocumentListener
     }
 
     override fun createComponent(): JComponent{
-        val config = JiraComponent.getInstance(project)
-        txtUsername.text = config.name
-        passwordField.text = config.password
-
         val mainPanel = JPanel()
-        mainPanel.setBounds(0, 0, 452, 120)
+        mainPanel.setBounds(0, 0, 452, 254)
         mainPanel.layout = null
 
         val lblUsername = JLabel("Username")
         lblUsername.setBounds(30, 25, 83, 16)
         mainPanel.add(lblUsername)
 
-        val lblPassword = JLabel("Password")
+        val lblPassword = JLabel("Token")
         lblPassword.setBounds(30, 74, 83, 16)
         mainPanel.add(lblPassword)
 
-        passwordField.setBounds(125, 69, 291, 26)
-        mainPanel.add(passwordField)
+        val lblUrl = JLabel("Jira URL")
+        lblUrl.setBounds(30, 123, 83, 16)
+        mainPanel.add(lblUrl)
+
+        val lblRegEx = JLabel("RegEx")
+        lblRegEx.setBounds(30, 172, 83, 16)
+        mainPanel.add(lblRegEx)
 
         txtUsername.setBounds(125, 20, 291, 26)
-        mainPanel.add(txtUsername)
         txtUsername.columns = 10
+        mainPanel.add(txtUsername)
 
-        passwordField.document?.addDocumentListener(this)
+        tokenField.setBounds(125, 69, 291, 26)
+        mainPanel.add(tokenField)
+
+        txtUrl.setBounds(125, 118, 291, 26)
+        txtUrl.columns = 10
+        mainPanel.add(txtUrl)
+
+        txtRegEx.setBounds(125, 167, 291, 26)
+        txtRegEx.columns = 10
+        mainPanel.add(txtRegEx)
+
+        val config = JiraComponent.getInstance(project)
+        txtUsername.text = config.name
+        tokenField.text = config.token
+        txtUrl.text = config.url
+        txtRegEx.text = config.regex
+
+        tokenField.document?.addDocumentListener(this)
         txtUsername.document?.addDocumentListener(this)
+        txtUrl.document?.addDocumentListener(this)
+        txtRegEx.document?.addDocumentListener(this)
 
         return mainPanel
     }
