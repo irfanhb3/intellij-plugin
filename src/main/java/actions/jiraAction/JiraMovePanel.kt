@@ -1,7 +1,7 @@
 package actions.jiraAction
 
 import com.intellij.openapi.ui.ComboBox
-import network.Transition
+import actions.jiraAction.network.Transition
 import java.awt.Dimension
 import javax.swing.JLabel
 import javax.swing.JPanel

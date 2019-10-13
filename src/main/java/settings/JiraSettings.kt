@@ -24,8 +24,8 @@ class JiraSettings(private val project: Project): Configurable, DocumentListener
         val config = JiraComponent.getInstance(project)
         config.name = txtUsername.text
         config.token = String(tokenField.password)
-        config.url = tokenField.text
-        config.regex = tokenField.text
+        config.url = txtUrl.text
+        config.regex = txtRegEx.text
         isModified = false
     }
 

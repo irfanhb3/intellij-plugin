@@ -1,5 +1,8 @@
 <application>
   <component name="JiraComponent">
     <option name="name" value="irfan" />
+    <option name="regex" value="[a-zA-Z]+-[0-9]+" />
+    <option name="token" value="fasfas" />
+    <option name="url" value="https://byjustech.atlassian.net/" />
   </component>
 </application>
